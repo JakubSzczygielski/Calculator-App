@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #b3e0ff, #cbebc4);
+  height: 100vh;
+}
+.title {
+  text-align: center;
+  margin: auto;
+  font-family: "Sixtyfour", sans-serif;
+}
+.calculator-container {
+  width: 400px;
+  height: 480px;
+  border: solid black;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.calculator-container input {
+  width: 370px;
+  height: 30px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: end;
+  
+  
+}
+
+.button {
+  display: inline-block;
+  height: 50px;
+  width: 55px;
+  transition: filter 0.3s ease;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  filter: brightness(95%);
+}
+.previos-calculation {
+  text-align: end;
+  margin-right: 15px;
+  background-color: #b3e0ff;
+  color: white;
+  min-height: 20px;
+  width: 250px;
+  padding: 4px 4px;
+  border-radius: 5px;
+  margin-left: 130px;
+  font-weight: bold;
+  overflow-x: hidden;
+}
+
+.equal-animation {
+  animation: equal 0.3s linear;
+}
+.color-animation {
+    animation: changeColor 0.3s linear, shadowAnimation 0.3s linear;
+  }
+  @keyframes equal {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  
+  @keyframes changeColor {
+    0% {
+      border-color: #b3e0ff;
+      border-top-color: #b3e0ff;
+      border-right-color: #b3e0ff;
+      border-bottom-color: #b3e0ff;
+      border-left-color: #b3e0ff;
+    }
+    100% {
+      border-color: grey;
+      border-top-color: grey;
+      border-right-color: grey;
+      border-bottom-color: grey;
+      border-left-color: grey;
+    }
+  }
+  
+  @keyframes shadowAnimation {
+    0% {
+      box-shadow: 0 0 5px #b3e0ff;
+    }
+    100% {
+      box-shadow: none;
+    }
+  }
